@@ -1,0 +1,14 @@
+heartbeat.monitors:
+- type: http
+  id: elkapi-status
+  name: ElkApi Status
+  service.name: ElkApiDemo
+  hosts: ["http://wapi/health"]
+  check.response.status: [200]
+  schedule: '@every 30s'
+heartbeat.scheduler:
+  limit: 10
+
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["elasticsearch:9200"]

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElkApiDemo</name>
+    </assembly>
+    <members>
+        <member name="M:ElkApiDemo.Controllers.WeatherForecastController.GetNorth">
+            <summary>
+            No errors or delays
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ElkApiDemo.Controllers.WeatherForecastController.GetSouth">
+            <summary>
+            Random Delay
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ElkApiDemo.Controllers.WeatherForecastController.GetEast">
+            <summary>
+            BadRequest on value % 4 == 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ElkApiDemo.Controllers.WeatherForecastController.GetWest">
+            <summary>
+            Exception on value % 4 == 0
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
