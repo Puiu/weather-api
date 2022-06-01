@@ -56,4 +56,4 @@ jobs:
           app-name: 'wapp-lc57xo4aledbu'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_157F2634ECD8429A965579E17300AFCD }}
-          package: .
+          package: ${{env.DOTNET_ROOT}}/myapp
