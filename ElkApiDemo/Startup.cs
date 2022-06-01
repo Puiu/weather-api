@@ -31,7 +31,7 @@ namespace ElkApiDemo
             });
             services.AddHealthChecks();
 
-            services.AddOpenTelemetryTracing(
+            /* services.AddOpenTelemetryTracing(
                         (builder) => builder
                                     .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("ElkApiDemo")) //name visible in APM server
                                     .AddAspNetCoreInstrumentation(
@@ -48,7 +48,7 @@ namespace ElkApiDemo
                                         opt.ExportProcessorType = OpenTelemetry.ExportProcessorType.Simple;
                                         opt.Headers = "";
                                     })
-                        );
+                        ); */
 
         }
 
@@ -67,7 +67,7 @@ namespace ElkApiDemo
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
